@@ -1,0 +1,76 @@
+:root {
+  --green: #12e177;
+  --orange: #ffc72a;
+  --blue: #4c43d4;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: var(--blue);
+    color:white;
+    font-family: 'Roboto', sans-serif;
+  }
+  h1 {
+    text-transform: uppercase;
+  }
+  .green {
+    color:var(--green);
+  }
+  button {
+    background: none;
+    border: none;
+    outline: none;
+  }
+
+button:hover {
+  cursor: pointer;
+}
+.message {
+  padding-right:10px;
+}
+
+.app {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board .board-row {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #fff;
+}
+
+.board .board-row:last-child {
+    border-bottom: none;
+}
+
+.board .board-row .square {
+    width: 80px;
+    height: 80px;
+    border-right: 2px solid #fff;
+    font-size: 2.5rem;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.board .board-row .square:last-child {
+    border-right: none;
+}
+
+.hide {
+  display: none;
+}
+.square {
+  color:white;
+}
+
+.square.is_x {
+  color:var(--green);
+}
+.square.is_o {
+  color:var(--orange);
+}
